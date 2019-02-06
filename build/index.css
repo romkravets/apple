@@ -1,2 +1,23 @@
 body {
-  background: white; }
+  background: url(./assets/images/give_back_large_2x.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center top; }
+
+.global-item {
+  padding-top: 10%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .global-item__link {
+    position: relative;
+    font-size: 2rem;
+    color: #66bbff;
+    text-shadow: 0.5rem;
+    text-transform: uppercase; }
+    .global-item__link:hover {
+      color: black;
+      transition: all .1s linear; }
