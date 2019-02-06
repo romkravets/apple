@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px; }
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh; }
+
+h1,
+h2,
+h3,
+h4,
+p, figure {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0; }
+
+h2 {
+  font-size: 4.57rem; }
+
+h3 {
+  font-size: 2rem; }
+
+h4 {
+  font-size: 1rem; }
+
+a {
+  text-decoration: none;
+  display: inline-block; }
+
+.bulb-lighter {
+  display: inline-block;
+  width: 100px;
+  border: 1px solid #272727;
+  border-radius: 4px;
+  margin: 10px 100px;
+  text-align: center; }
+  .bulb-lighter__item {
+    height: 40px;
+    width: 40px;
+    margin: 10px auto;
+    border-radius: 50%;
+    background-color: #7c7c7c;
+    outline: none;
+    transition: all 0.5s; }
+  .bulb-lighter__btn {
+    display: block;
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center; }
+  .bulb-lighter .active {
+    background-color: yellow; }
+
+.accordion {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  margin: 100px auto;
+  max-width: 30em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .accordion__item {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    box-sizing: border-box; }
+  .accordion__arrow {
+    width: 1em;
+    margin-left: 20em; }
+
+.item__header {
+  background-image: linear-gradient(96deg, #010289 2%, #1d30d5);
+  padding: 1em 2em 1em 2em;
+  width: 100%;
+  text-align: left;
+  font-size: 1em;
+  color: #fefefe;
+  cursor: pointer;
+  transition: background 0.6s; }
+
+.item__content {
+  padding: 1em;
+  box-sizing: border-box;
+  font-size: 1em;
+  font-weight: 400;
+  display: none;
+  height: auto;
+  border: 1px solid #444444;
+  background: #fdfdfd;
+  color: #444444;
+  transition: all 0.5s; }
+
+.item--open .item__content {
+  display: -ms-flexbox;
+  display: flex; }

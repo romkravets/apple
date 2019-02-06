@@ -1,0 +1,63 @@
+@import '../../styles/variables.scss';
+
+.menu {
+  background-color:  rgb(83, 95, 130);;
+  &__sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(17, 17, 17);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  &__link {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(129, 129, 129);
+    display: block;
+    transition: 0.3s;
+  }
+  &__link:hover {
+    color: rgb(241, 241, 241);
+  }
+  &__nav {
+    margin-top: 3rem;
+  }
+}
+
+.menu__close_btn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.menu__open_btn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(17, 17, 17);
+  color: rgb(255, 255, 255);
+  padding: 10px 15px;
+  border: none;
+  width: 250px;
+  &:hover {
+    //background-color: rgb(68, 68, 68);
+  }
+}
+
+.main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+.main-active {
+  margin-left:250px;
+}
+
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+<link href="lesson_5.css" rel="stylesheet"></head>
+
+<body>
+  <nav class="global-nav global-nav_darken">
+    <div class="global-nav__mobile-controls">
+      <div class="global-nav__burger burger">
+        <span class="burger__raw"></span>
+        <span class="burger__raw"></span>
+      </div>
+      <div class="logo">
+          <img src="./assets/images/apple_image.svg" alt="">
+      </div>
+      <div class="global-nav__cart">
+          <img src="./assets/images/cart_image.svg" alt="">
+      </div>
+    </div>
+    <ul class="global-nav__menu">
+      <li class="global-nav__item">
+        <a href="" class="global-nav__link global-nav__link_with_image">
+          <img src="./assets/images/apple_image.svg" alt="">
+        </a>
+      </li>
+      <li class="global-nav__item">
+        <a href="" class="global-nav__link">
+          <span>Mac</span>
+        </a>
+      </li>
+      <li class="global-nav__item">
+        <a href="" class="global-nav__link">
+          <span>iPad</span>
+        </a>
+      </li>
+      <li class="global-nav__item">
+        <a href="" class="global-nav__link">
+          <span>iPhone</span>
+        </a>
+      </li>
+      <li class="global-nav__item">
+        <a href="" class="global-nav__link">
+          <span>Tv</span>
+        </a>
+      </li>
+      <li class="global-nav__item">
+        <a href="" class="global-nav__link">
+          <span>Watch</span>
+        </a>
+      </li>
+      <li class="global-nav__item">
+        <a href="" class="global-nav__link">
+          <span>Music</span>
+        </a>
+      </li>
+      <li class="global-nav__item">
+        <a href="" class="global-nav__link">
+          <span>Support</span>
+        </a>
+      </li>
+      <li class="global-nav__item">
+        <a href="" class="global-nav__link global-nav__link_with_image">
+          <img src="./assets/images/cart_image.svg" alt="">
+        </a>
+      </li>
+      <li class="global-nav__item">
+        <a href="" class="global-nav__link global-nav__link_with_image">
+          <img src="./assets/images/search.svg" alt="">
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.global-nav');
+
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('global-nav_opened');
+    });
+  </script>
+<script type="text/javascript" src="vendors.js"></script><script type="text/javascript" src="lesson_5.js"></script></body>
+
+</html>

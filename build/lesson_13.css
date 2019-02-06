@@ -1,0 +1,79 @@
+.tabs {
+  border: 1px solid red; }
+  .tabs__controls {
+    display: -ms-flexbox;
+    display: flex; }
+  .tabs__control {
+    background-color: none;
+    border: none;
+    font-size: 1rem;
+    padding: 1rem; }
+    .tabs__control_active {
+      background-color: green; }
+  .tabs__content-item {
+    display: none;
+    min-height: 200px; }
+    .tabs__content-item_active {
+      display: inherit; }
+.toggler {
+  border: none;
+  font-size: 1rem;
+  padding: 1rem;
+  box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.3); }
+* {
+  box-sizing: border-box; }
+
+html {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px; }
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh; }
+
+h1,
+h2,
+h3,
+h4,
+p, figure {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+h2 {
+  font-size: 4.57rem; }
+
+h3 {
+  font-size: 2rem; }
+
+h4 {
+  font-size: 1rem; }
+
+a {
+  text-decoration: none;
+  display: inline-block; }
+
+.page {
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh; }
+
+.side-nav {
+  width: 20%;
+  -ms-flex: 20% 0 0px;
+      flex: 20% 0 0;
+  background: #142130; }
+
+main {
+  width: 80%;
+  -ms-flex: 80% 0 0px;
+      flex: 80% 0 0; }
+
+.some-tabs {
+  max-width: 678px;
+  margin: 0 auto; }

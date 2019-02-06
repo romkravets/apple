@@ -1,0 +1,220 @@
+.menu {
+  background-color: #535f82; }
+  .menu__sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px; }
+  .menu__link {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s; }
+  .menu__link:hover {
+    color: #f1f1f1; }
+  .menu__nav {
+    margin-top: 3rem; }
+
+.menu__close_btn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px; }
+
+.menu__open_btn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  width: 250px; }
+
+.main {
+  transition: margin-left .5s;
+  padding: 16px; }
+
+.main-active {
+  margin-left: 250px; }
+@charset "UTF-8";
+.comment {
+  max-width: 340px;
+  margin: 50px auto 0;
+  position: relative;
+  /*&__delete {
+        font-size: 0.5rem;
+        position: relative;
+        display: flex;
+        float: right; //використав float, не знаю чому flex не працює.
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+    }*/ }
+  .comment__box {
+    max-width: 320px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0px 15px 30px rgba(40, 40, 80, 0.2); }
+  .comment__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 50px;
+    letter-spacing: 0.1em;
+    border-bottom: 1px solid #f1f1f6;
+    margin: 0;
+    padding: 0;
+    height: 50px; }
+  .comment__lists {
+    padding: 20px;
+    height: 314px;
+    overflow-x: hidden;
+    overflow-y: auto; }
+  .comment__items {
+    padding: 10px 10px;
+    border-bottom: 1px solid #f1f1f6;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: capitalize;
+    font-size: 11px;
+    line-height: 12px;
+    list-style: none; }
+    .comment__items:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0; }
+  .comment__forms {
+    padding: 20px; }
+  .comment__text_input {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #f1f1f6;
+    padding: 0 18px;
+    margin: 0;
+    font-size: 12px;
+    height: 48px;
+    color: #9EA0AA; }
+    .comment__text_input:focus {
+      outline: none;
+      box-shadow: inset 2px 0 0 0 #626FB0; }
+  .comment__button {
+    background-color: #626FB0;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    text-indent: 40px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    line-height: 40px;
+    font-family: FontAwesome;
+    transition: 0.2s;
+    box-shadow: 0 3px 8px 3px rgba(40, 40, 80, 0.2);
+    bottom: 18px;
+    right: 0; }
+    .comment__button:after {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 1px;
+      left: 0.2px;
+      z-index: 10;
+      color: white;
+      content: "\2B9D";
+      text-indent: 0;
+      text-align: center; }
+    .comment__button:hover, .comment__button:focus {
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+      box-shadow: 0 5px 15px 0px rgba(40, 40, 80, 0.2);
+      outline: none; }
+* {
+  box-sizing: border-box; }
+
+html {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  color: #505050; }
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  background-color: #535f82; }
+
+h1,
+h2,
+h3,
+h4,
+p, figure {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+h2 {
+  font-size: 4.57rem; }
+
+h3 {
+  font-size: 2rem; }
+
+h4 {
+  font-size: 1rem; }
+
+a {
+  text-decoration: none;
+  display: inline-block; }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  background-color: #535f82;
+  font-family: 'Oxygen', sans-serif;
+  color: #9EA0AA; }
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh; }
+
+h1,
+h2,
+h3,
+h4,
+p, figure {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+h2 {
+  font-size: 4.57rem; }
+
+h3 {
+  font-size: 2rem; }
+
+h4 {
+  font-size: 1rem; }
+
+a {
+  text-decoration: none;
+  display: inline-block; }

@@ -1,0 +1,138 @@
+@import './variables.scss';
+
+.global-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: $global-nav-height;
+  position: fixed;
+  padding: 0 1rem;
+  z-index: 3;
+  &__link {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+  }
+  &_default {
+    background-color: rgb(50, 50, 50);
+    opacity: .67;
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    max-width: $page-content-width;
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+  }
+  &__item {
+    flex: 1 1;
+    display: flex;
+    padding: 0 1rem;
+  }
+  &__mobile-controls {
+    display: none;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.global-nav__link:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.global-nav__link:hover {
+  opacity: .65;
+}
+
+.burger {
+  height: $burger-size;
+  width: $burger-size;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.burger__raw {
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+  transition: all 500ms;
+}
+
+@media (max-width: 575px) {
+  .global-nav__mobile-controls {
+    display: flex;
+  }
+
+  .global-nav__item {
+    padding: 0;
+    opacity: 0;
+    width: 100%;
+    transition: opacity 500ms;
+    transition-delay: 100ms;
+  }
+
+  .global-nav__link {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    width: 100%;
+  }
+
+  .global-nav_opened .global-nav__item {
+    opacity: 1;
+  }
+
+  .global-nav__menu {
+    visibility: hidden;
+    transform: scaleY(0);
+    position: absolute;
+    top: $global-nav-height;
+    left: 0;
+    display: block;
+    background-color: rgb(0, 0, 0);
+    padding: 0 34px;
+    height: calc(100vh - #{$global-nav-height});
+    transform-origin: top center;
+    transition: all 500ms;
+  }
+
+  .global-nav_opened > .global-nav__menu {
+    visibility: visible;
+    transform: scaleY(1);
+  }
+
+  .global-nav__link_with_image {
+    display: none;
+  }
+
+  .global-nav__link {
+    justify-content: flex-start;
+  }
+
+  .global-nav__cart {
+    visibility: visible;
+    opacity: 1;
+    transition: all 500ms;
+    transition-delay: 100ms;
+  }
+
+  .global-nav_opened .global-nav__cart {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .global-nav_opened .burger__raw:first-child {
+    transform: translateY(5px) rotate(-45deg);
+  }
+
+  .global-nav_opened .burger__raw:last-child {
+    transform: translateY(-5px) rotate(45deg);
+  }
+}
